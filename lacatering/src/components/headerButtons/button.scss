@@ -1,0 +1,10 @@
+.headerLink{
+    background-color: #fff;
+    color:black;
+    padding: 8px 16px;
+    border: none;
+    letter-spacing: 1.5px;
+    &:hover{
+        background-color: #ccc;
+    }
+}

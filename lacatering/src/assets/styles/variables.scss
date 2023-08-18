@@ -1,0 +1,22 @@
+// sizes
+
+$max-width-1200 : 1200px;
+$max-width-991: 991px;
+$max-width-767 : 767px;
+$max-width-576: 576px;
+$max-width-320: 320px;
+
+
+
+//  Flex
+%G-flex{
+    display: flex;
+    justify-content: start;
+}
+
+
+.G-flex-column{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}

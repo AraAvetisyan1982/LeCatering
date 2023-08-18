@@ -1,0 +1,52 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/mixin.scss';
+
+.contacts-container {
+    width: 70%;
+    margin: 0 auto;
+    @include screen-max-width-767 () {
+        width: 90%;
+        margin-top: 50px;
+    }
+    .contact {
+        font-size: 36px;
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+
+    }
+    .contact-text-block {
+        letter-spacing: 1.2;
+        margin: 40px 0;
+
+        .address {
+            margin: 20px 0;
+            color: teal;
+            font-size: 18px;
+        }
+
+    }
+
+    .contact-input {
+        padding: 16px 8px;
+        border: none;
+        border-bottom: 1px solid black;
+
+        &:focus {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    }
+
+    .btn-cont {
+        @extend %G-flex !optional;
+        .message {
+            margin: 16px 0;
+            padding: 8px 16px;
+            border: none;
+            text-transform: uppercase;
+            color: #000;
+            background-color: $main_grey ;
+            cursor: pointer;
+        }
+    }
+}

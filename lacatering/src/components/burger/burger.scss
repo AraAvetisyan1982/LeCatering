@@ -1,0 +1,40 @@
+@import '../../assets/styles/mixin.scss';
+
+.burger-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+
+    @include screen-max-width-767() {
+        width: 100%;
+        height: 30%
+    }
+
+    .burger {
+        max-width: 1600px;
+        max-height: 800px;
+        min-width: 320px;
+        min-height: 200px;
+
+
+        // background-image: url('../../assets/images/titleimg.jpg');
+        // background-size: 100%  ,cover , contain;
+        // background-position: top, center, bottom;
+        // background-repeat: no-repeat;
+
+    }
+
+    .main_title {
+        position: absolute;
+        left: 40px;
+        bottom: 60px;
+        @include screen-max-width-576 () {
+            font-size: 20px;
+            left: 10px;
+            bottom: 20px;
+        }
+    }
+
+
+
+}
